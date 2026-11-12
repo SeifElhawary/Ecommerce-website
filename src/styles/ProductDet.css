@@ -1,0 +1,153 @@
+.productDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 190px;
+    justify-content: center;
+}
+.anotherimgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+    width: 100%;
+    height: 30%;
+    img{
+        width: 130px;
+        object-fit: cover;
+    }
+}
+.productDetails .info{
+    gap: 15px;
+    p{
+        max-width: 750px;
+        margin: 20px 0;
+    }
+    h2{
+        color: rgb(228, 172, 66);
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    span{
+        color: orange;
+    }
+    button{
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid orange;
+        transition: 0.4s ease;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: transparent;
+        color: white;
+    }
+       span svg{
+            color: orange !important;
+            fill: orange !important;
+        }
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   height: 500px;
+   width: 500px;
+}
+    .title{
+        color: rgb(255, 255, 255);
+        border-bottom: 3px solid orange;
+        padding-bottom: 10px;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    .cate{
+        margin-top: 50px;
+    }
+    .mainImg{
+        width: 350px;
+        object-fit: cover;
+    }
+    @media(max-width: 1024px) {
+  .productDetails {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    padding: 0 20px;
+  }
+  
+  .productDetails .info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .productDetails .info p {
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  .productDetails .info button {
+    margin: 20px auto 0 auto;
+  }
+
+  .imgs {
+    width: 100%;
+    height: auto;
+  }
+
+  .mainImg {
+    width: 280px;
+  }
+}
+
+@media(max-width: 768px) {
+  .mainImg {
+    width: 240px;
+  }
+
+  .anotherimgs img {
+    width: 90px;
+  }
+
+  .productDetails .info h2,
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 480px) {
+  .productDetails {
+    padding: 0 10px;
+  }
+
+  .mainImg {
+    width: 200px;
+  }
+
+  .anotherimgs {
+    gap: 8px;
+  }
+
+  .anotherimgs img {
+    width: 70px;
+  }
+
+  .productDetails .info h2,
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .productDetails .info p {
+    font-size: 14px;
+  }
+}
