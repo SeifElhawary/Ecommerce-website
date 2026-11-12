@@ -36,7 +36,7 @@ function SearchPage() {
   }, [query]);
 
   return (
-    <div className="productSlider moveDown">
+    <div style={{paddingTop:"150px"}} className="productSlider">
       <div className="container">
         <div className="top">
           <h2>Search Results for: "{query}"</h2>

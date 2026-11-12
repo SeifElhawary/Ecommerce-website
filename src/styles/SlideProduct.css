@@ -12,14 +12,8 @@
         }
     }
 }
-.moveDown{
-    margin-top: 180px;
-}
-@media(max-width:900px){
-  .moveDown{
-    margin-top: 210px;
-  }
-}
+
+
 .product{
     position: relative;
     overflow: hidden;
