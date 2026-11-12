@@ -16,7 +16,7 @@ function ProductDet() {
   const [det, setDeet] = useState({});
   const [loading, setLoading] = useState(true);
   const [cat, setCat] = useState([]);
-  const { addToCart , cartItems } = useContext(Cart);
+  const { addToCart , cartItems ,addToFav , favItems } = useContext(Cart);
   const [showAlert, setShowAlert] = useState(false);
   useEffect(() => {
     const fetchProductData = async () => {
@@ -170,7 +170,7 @@ function ProductDet() {
                         <span onClick={() => handleAddToCart(data)}>
                           <AddShoppingCartIcon />
                         </span>
-                        <span>
+                        <span style={favItems.find((i)=>i.id == data.id)? {backgroundColor:"red"} : null } onClick={() => addToFav(data)}>
                           <FavoriteIcon />
                         </span>
                         <span>
