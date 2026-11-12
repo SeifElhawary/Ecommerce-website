@@ -14,11 +14,12 @@ export default function CartProvider({ children }) {
     const addToFav = (item)=>{
       const inFav = favItems.find((i)=>i.id === item.id);
       if(inFav){
-        return
+            setFavItems((prev)=> prev.filter((i)=>i.id !== item.id))
       }else{
         setFavItems((prev)=>[...prev , item])
       } 
     }
+
     const increaseQuan = (id) => {
         setCartItems((prev) =>
             prev.map((item) =>

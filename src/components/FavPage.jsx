@@ -42,7 +42,7 @@ function FavPage() {
                                 <AddShoppingCartIcon/>
                             </span>
                             <span 
-                                style={{ backgroundColor: 'red', pointerEvents: 'none' }} 
+                                style={{ backgroundColor: 'red' }} 
                                 onClick={() => addToFav(i)}
                             >
                                 <FavoriteIcon/>
