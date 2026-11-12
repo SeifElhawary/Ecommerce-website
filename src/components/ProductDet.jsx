@@ -167,7 +167,7 @@ function ProductDet() {
                         </div>
                       </Link>
                       <div className="icons">
-                        <span onClick={() => handleAddToCart(data)}>
+                        <span style={cartItems.find((i)=>i.id == data.id)? {backgroundColor:"orange"} : null} onClick={() => handleAddToCart(data)}>
                           <AddShoppingCartIcon />
                         </span>
                         <span style={favItems.find((i)=>i.id == data.id)? {backgroundColor:"red"} : null } onClick={() => addToFav(data)}>
